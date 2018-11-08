@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
     private  void runAsyncTask(){
         new AsyncTask<Void, Integer, Boolean>(){
 
-            protected void onPreExcute(){
+            @Override
+            protected void onPreExecute() {
                 super.onPreExecute();
                 tortorise_count = 0; ///初始化
             }
